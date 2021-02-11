@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Single File Upload</h2>
+    <form
+      action="/single"
+      method="POST"
+      accept-charset="utf-8"
+      enctype="multipart/form-data"
+    >
+      <input type="file" name="singleFile" />
+      <button type="submit">Upload Files</button>
+    </form>
+    <h2>Multiple File Upload</h2>
+    <form
+      action="/multiple"
+      method="POST"
+      accept-charset="utf-8"
+      enctype="multipart/form-data"
+    >
+      <input type="file" name="multipleFiles" multiple />
+      <button type="submit">Upload Files</button>
+    </form>
+  </body>
+</html>
